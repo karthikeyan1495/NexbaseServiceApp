@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="serviceStatusVm"
+            type="com.spider.star.nexbase.servicestatus.viewmodal.ServiceStatusVm"/>
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:onClick="@{serviceStatusVm::OnClickbackPress}"
+                        android:src="@drawable/ic_left_arrow"/>
+
+
+                    <TextView
+                        android:layout_marginStart="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/service_status"
+                        android:textAllCaps="false"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        app:font="@{@string/pt_sans_web_text_regular}"/>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="@string/client_compliant"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    app:font="@{@string/pt_sans_web_text_regular}"/>
+
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="-"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center" />
+
+
+                <TextView
+                    android:id="@+id/problem_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Laptop , RAM"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    app:font="@{@string/pt_sans_web_text_regular}"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"
+                    android:text="@string/first_level_update"
+                    app:font="@{@string/pt_sans_web_text_regular}"/>
+
+                <EditText
+                    android:id="@+id/first_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="18sp"
+                    android:paddingStart="4dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/squareborder_linegray"
+                    app:font="@{@string/pt_sans_web_text_regular}"/>
+
+            </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textAllCaps="false"
+                        android:text="@string/second_level_update"
+                        app:font="@{@string/pt_sans_web_text_regular}"/>
+
+                    <EditText
+                        android:id="@+id/second_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textSize="18sp"
+                        android:paddingStart="4dp"
+                        android:textColor="@color/black"
+                        android:background="@drawable/squareborder_linegray"
+                        app:font="@{@string/pt_sans_web_text_regular}"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:text="@string/status"
+                        android:layout_marginStart="20dp"
+                        app:font="@{@string/pt_sans_web_text_regular}"/>
+
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:layout_marginStart="20dp"
+                        android:id="@+id/status"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/spin_bg">
+
+                    </android.support.v7.widget.AppCompatSpinner>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="@string/submit"
+                android:background="#3985a5"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:onClick="@{serviceStatusVm::onClicksubmit}"
+                app:font="@{@string/pt_sans_web_text_regular}"/>
+
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+</layout>

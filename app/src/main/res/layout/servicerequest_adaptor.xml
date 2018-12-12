@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="statusItemchanges"
+            type="com.spider.star.nexbase.servicerequest.adaptor.StatusItemChanges"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:background="@drawable/border_linegray">
+
+
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:background="@drawable/oval"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/accept"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="@string/accept"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:textColor="@color/red"
+                android:onClick="@{statusItemchanges::onClickAccept}"
+                android:background="@drawable/bordor_linered"/>
+
+           <TextView
+                android:id="@+id/decline"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/border_linegray"
+                android:gravity="center"
+               android:onClick="@{statusItemchanges::onClickDecline}"
+                android:text="@string/decline" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</layout>

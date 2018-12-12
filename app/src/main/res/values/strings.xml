@@ -1,0 +1,82 @@
+<resources>
+
+
+    <string name="app_name">Nexbase</string>
+
+    <!-- log in page-->
+    <string name="nexbase">NexBase</string>
+    <string name="user_name">Username</string>
+    <string name="Password">Password</string>
+    <string name="Login">Login</string>
+
+    <!--customer Details-->
+    <string name="customer_details">Customer Details</string>
+    <string name="company_name">Company Name</string>
+    <string name="name">Name</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="email_id">Email id</string>
+    <string name="address">Address</string>
+    <string name="tracking_id">Tracking Id</string>
+    <string name="compliant">Compliant</string>
+    <string name="get_direction">Get Direction</string>
+    <string name="update_status">Update Status</string>
+
+
+    <!--Service Request-->
+    <string name="service_request">Service Request</string>
+    <string name="notification">Notification</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+
+    <!-- status  update-->
+    <string name="service_update">Your Service Status has been Successfully Updated.</string>
+
+
+    <!--service status -->
+    <string name="service_status">Service Status</string>
+    <string name="client_compliant">Client Complaint</string>
+    <string name="first_level_update">1st level update</string>
+    <string name="second_level_update">2nd level update</string>
+    <string name="status">Status</string>
+    <string name="submit">Submit</string>
+
+
+    <!--Payment-->
+    <string name="payment">Payment</string>
+    <string name="invoice"><u>Invoice</u></string>
+    <string name="service_details">Service Details</string>
+    <string name="amount">Amount</string>
+    <string name="tax">Tax</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="select">Select:</string>
+    <string name="client_payment_mode">Client Payment Mode</string>
+    <string name="cash">Cash</string>
+    <string name="credit">Credit</string>
+
+    <!--call feedback-->
+    <string name="closecall">Close Call</string>
+    <string name="kindly_give_as_feedback">Kindly give as Feedback</string>
+
+
+    <!--close call-->
+    <string name="your_request_is_over">Your Request is over...</string>
+
+
+    <string-array name="status_arrays">
+        <item>Accepted</item>
+        <item>Rejected</item>
+        <item>In progress</item>
+        <item>Pending</item>
+        <item>Completed</item>
+    </string-array>
+
+
+    <!--api error handler -->
+    <string name="no_internet">No internet</string>
+    <string name="something_went_wrong_while_retrieving_information">Something went wrong while retrieving information</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="google_maps_keys" templateMergeStrategy="preserve" translatable="false">AIzaSyBIEvUxsYr45K3k7GDN8LnJhhq8OuurGN4</string>
+
+
+</resources>
